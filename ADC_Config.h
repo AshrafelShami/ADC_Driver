@@ -28,8 +28,8 @@ typedef enum{
 	}Prescaler;
 	
 typedef enum{
-	AutoTrigger_Enable	,
-	AutoTrigger_Disable
+	AutoTrigger_Disable,
+	AutoTrigger_Enable
 	}Trigger;
 	
 typedef enum{
