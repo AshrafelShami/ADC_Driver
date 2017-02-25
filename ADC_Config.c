@@ -78,6 +78,6 @@ u16 ADC_Scan ( u8 Channel_Select ){
 	ADCSRA |= (1 << ADSC);			/*	Start the Convention			*/
 	
 	while (ADCSRA & (1 << ADSC));		/*	Wait for the conversion to complete
-							And Interrupt flag will be high		*/
+							    And ADSC bit will Driven LOW	*/
 	return ADC;
 }
